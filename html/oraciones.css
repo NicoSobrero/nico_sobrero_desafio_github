@@ -1,0 +1,434 @@
+*{
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+.animate__animated.animate__backInUp {
+        --animate-duration: 6s;
+        }
+
+#texto_1{
+    justify-self: center;
+    align-self: center;
+    overflow-y: scroll;
+    }
+#mateo6_7{
+    justify-self: center;
+    align-self: center;
+    }
+
+#texto_2{
+    justify-self: center;
+    align-self: center;
+    overflow-y: scroll; 
+    }
+#mateo6_72{
+    justify-self: center;
+    align-self: center;
+    }
+
+#texto_3{
+    justify-self: center;
+    align-self: center;
+    overflow-y: scroll; 
+    }
+#mateo6_73{
+    justify-self: center;
+    align-self: center;
+    }
+
+#texto_4{
+    justify-self: center;
+    align-self: center;
+    overflow-y: scroll; 
+    }
+#mateo6_74{
+    justify-self: center;
+    align-self: center;
+    }
+
+
+
+
+@media only screen and ( max-width: 650px){     
+    #h1{
+            font-size: 30px;
+    }
+    
+    #grid{
+        display:grid;
+        grid-template-columns: 100% ;
+        grid-template-rows: 100px 100px 1800px 40px;
+        grid-template-areas:"header"
+                            "nav"
+                            "layout"
+                            "footer"; 
+    }
+    
+    #header{ 
+        grid-area: header;
+        display:flex;
+        align-self: stretch;
+        justify-content: stretch;
+        width: 100%;
+        height: 100%;
+    
+    }
+            #img_header{
+            width:100%;
+            height: 100%;
+            }
+    
+    #nav{
+            grid-area: nav;
+            display:flex;
+            flex-direction: column;    
+            height: max-content;    
+            justify-content: space-evenly;
+            align-items:center;
+            
+            background-color: rgb(189, 239, 252);
+    }
+            #nav_home{
+            width: 15%;
+            font-size: 9px;
+    }
+            #nav_catalogo{
+            width: 15%;
+            font-size: 9px;
+    }
+            #nav_oraciones{
+            width: 15%;
+            font-size: 9px;
+    }
+            #nav_multimedia{
+            width: 15%;
+            font-size: 9px;
+    }
+            #nav_contacto{
+            width: 15%;
+            font-size: 9px;
+    }
+    
+    
+    #layout{
+        grid-area: layout;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 11% 11% 11% 11% 11% 11% 11% 11% 11% ;
+        grid-template-areas: "a1"
+                             "a2"
+                             "a3"
+                             "a4"
+                             "a5"
+                             "a6"
+                             "a7"
+                             "a8"
+                             "a9"
+                             
+                            
+    }
+    
+    h1{
+        grid-area: a1;
+        justify-self: center;
+        align-self: center;
+        font-size: 25px;
+    }
+    
+    #texto_1{
+        grid-area: a3;
+        width: 90%;
+        height: 80px;            
+    }
+    #texto_2{
+        grid-area: a5;
+        width: 90%;
+        height: 80px;
+    }
+    #texto_3{
+        grid-area: a7;
+        width: 90%;
+        height: 80px;
+    }
+    #texto_4{
+        grid-area: a9;
+        width: 90%;
+        height: 80px;
+    }
+
+   
+    
+    #mateo6_7{
+        grid-area: a2;
+        width:60%;
+        height:90%;
+    }
+    #mateo6_72{
+        grid-area: a4;
+        width:60%;
+        height:90%;
+    }
+    #mateo6_73{
+        grid-area: a6;
+        width:60%;
+        height:90%;
+    }
+    #mateo6_74{
+        grid-area: a8;
+        width:60%;
+        height:90%;
+    }
+    
+    #footer{
+            grid-area: footer;
+            background-color: rgb(189, 239, 252);
+    }
+    }
+    
+@media only screen and ( min-width: 650px){
+        #grid{
+            display:grid;
+            grid-template-columns: 100% ;
+            grid-template-rows: 200px 70px 1020px 100px;
+            grid-template-areas:"header"
+                                "nav"
+                                "layout"
+                                "footer";
+        }
+        
+        #header{ 
+            grid-area: header;
+            display:flex;
+            width: 100%;
+            height: 100%;
+        
+        }
+            #img_header{
+            width:100%;
+            height: 100%;
+            }
+        
+        #nav{
+                grid-area: nav;
+                display:flex;
+                flex-direction: row;    
+                justify-content: space-evenly;
+                align-items:center;
+                
+                background-color: rgb(189, 239, 252);
+        }
+            #nav_home{
+                width: 15%;        
+        }
+            #nav_catalogo{
+                width: 15%;
+        }
+            #nav_oraciones{
+                width: 15%;        
+        }
+            #nav_multimedia{
+                width: 15%;        
+        }
+            #nav_contacto{
+                width: 15%;       
+        }
+        
+        
+        #layout{
+            grid-area: layout;
+            display:grid;
+            grid-template-columns: 50%;
+            grid-template-rows: 10% 22,5% 22,5% 22,5% 22,5%;
+            grid-template-areas: "a1 a1"
+                                 "a2 a3"
+                                 "a4 a5"
+                                 "a6 a7"
+                                 "a8 a9"; 
+            row-gap: 2%;
+            column-gap: 2%;
+            justify-content: space-evenly;  
+                                 
+                                
+        }
+        
+        h1{
+            grid-area: a1;
+            justify-self: center;
+            align-self: center;
+            font-size: 220%;
+        }
+        
+        #texto_1{
+            grid-area: a2;
+            width: 90%;
+            height: 180px;            
+        }
+        #texto_2{
+            grid-area: a4;
+            width: 90%;
+            height: 180px;
+        }
+        #texto_3{
+            grid-area: a6;
+            width: 90%;
+            height: 180px;
+        }
+        #texto_4{
+            grid-area: a8;
+            width: 90%;
+            height: 180px;
+        }
+
+       
+        
+        #mateo6_7{
+            grid-area: a3;
+            width:60%;
+            height:90%;
+        }
+        #mateo6_72{
+            grid-area: a5;
+            width:60%;
+            height:90%;
+        }
+        #mateo6_73{
+            grid-area: a7;
+            width:60%;
+            height:90%;
+        }
+        #mateo6_74{
+            grid-area: a9;
+            width:60%;
+            height:90%;
+        }
+        
+        #footer{
+                grid-area: footer;
+                background-color: rgb(189, 239, 252);
+        }
+    }
+    
+@media only screen and ( min-width:800px){
+        #grid{
+            display:grid;
+            grid-template-columns: 100% ;
+            grid-template-rows: 300px 100px 1100px 200px;
+            grid-template-areas:"header"
+                                "nav"
+                                "layout"
+                                "footer";
+        }
+        
+        #header{ 
+            grid-area: header;
+            display:flex;
+            width: 100%;
+            height: 100%;
+            } 
+            #img_header{
+            width:100%;
+            height: 100%;
+            }
+        #nav{
+                grid-area: nav;
+                display:flex;
+                flex-direction: row;    
+                justify-content: space-evenly;
+                align-items:center;
+                
+                background-color: rgb(189, 239, 252);
+        }
+            #nav_home{
+                width: 15%;
+        
+        }
+            #nav_catalogo{
+                width: 15%;
+        }
+            #nav_oraciones{
+                width: 15%;
+        
+        }
+            #nav_multimedia{
+                width: 15%;
+        
+        }
+            #nav_contacto{
+                width: 15%;
+        
+        }
+        
+        
+        #layout{
+            grid-area: layout;
+            display:grid;
+            grid-template-columns:70% 30%;
+            grid-template-rows: 10% 22,5% 22,5% 22,5% 22,5%;
+            grid-template-areas: "a1 a1"
+                                 "a2 a3"
+                                 "a4 a5"
+                                 "a6 a7"
+                                 "a8 a9"; 
+            row-gap: 2%;
+            column-gap: 2%;
+            justify-content: space-evenly;                           
+        }
+        
+        h1{
+            grid-area: a1;
+            justify-self: center;
+            align-self: center;
+        }
+
+        #texto_1{
+            grid-area: a2;
+            width: 90%;
+            height: 180px;            
+        }
+        #texto_2{
+            grid-area: a4;
+            width: 90%;
+            height: 180px;
+        }
+        #texto_3{
+            grid-area: a6;
+            width: 90%;
+            height: 180px;
+        }
+        #texto_4{
+            grid-area: a8;
+            width: 90%;
+            height: 180px;
+        }
+
+       
+        
+        #mateo6_7{
+            grid-area: a3;
+            width:60%;
+            height:90%;
+        }
+        #mateo6_72{
+            grid-area: a5;
+            width:60%;
+            height:90%;
+        }
+        #mateo6_73{
+            grid-area: a7;
+            width:60%;
+            height:90%;
+        }
+        #mateo6_74{
+            grid-area: a9;
+            width:60%;
+            height:90%;
+        }
+        
+        #footer{
+                grid-area: footer;
+                background-color: rgb(189, 239, 252);
+        }
+    }
